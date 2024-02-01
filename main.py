@@ -109,4 +109,14 @@ fig_hour_sales.update_layout(
 left_column,right_column=st.columns(2)
 left_column.plotly_chart(fig_hour_sales,use_container_width=True)
 right_column.plotly_chart(fig_product_sales,use_container_width=True)
+
+hide_st_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            header {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_st_style, unsafe_allow_html=True)
+
 st.dataframe(df_selection)
