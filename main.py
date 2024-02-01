@@ -1,12 +1,7 @@
 import pandas as pd
+import streamlit as st
+import plotly.express as px
 
-
-df=pd.read_excel(
-    io="ТАКСИ ЗАДАНИЕ 1.xlsx",
-    engine="openpyxl",
-    sheet_name="LOL",
-    skiprows=0,
-    usecols="A:D",
-    nrows=16,
-)
-print(df)
+st.set_page_config(page_title="Amkrlv")
+st.title("Графопостроитель")
+st.subheader("Отправьте мне файл excel")
