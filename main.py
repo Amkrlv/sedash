@@ -72,7 +72,7 @@ with middle_column:
     st.subheader(f"{average_rating} {star_rating}")
 with right_column:
     st.subheader("Средний объём продаж")
-    st.subheader(f"US ${average_sale_by_transaction}")
+    st.subheader(f"US ${average_sale_by_transaction}")#
 
 sales_by_product_line=(
     df_selection.groupby(by=["Product_line"]).sum(numeric_only=True)[["Total"]].sort_values(by="Total")
